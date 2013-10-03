@@ -8,9 +8,6 @@ class Student < ActiveRecord::Base
   ### NOT PASSING THIS VALIDATION ###
   # validates :phone, :format => { :with => /\d{3}-\d{3}-\d{4}/, :message => "Invalid phone"}
 
-
-  
-
   def name
     "#{first_name} #{last_name}"
   end
